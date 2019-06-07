@@ -1,0 +1,38 @@
+{
+  "name": "comic-title-reveal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "Bjørnar Vister Hansen <bjornarvh@gmail.com>",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "no-console": "warn"
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.0"
+  }
+}
