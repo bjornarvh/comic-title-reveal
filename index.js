@@ -7,7 +7,7 @@ const selectors = [
 
 document.querySelectorAll(selectors.join(", ")).forEach(img => {
   addTitleBelowImage(img, img.nextSibling === null);
-})
+});
 
 function addTitleBelowImage(img, append = false) {
   const $title = document.createElement("div");
@@ -21,7 +21,8 @@ function addTitleBelowImage(img, append = false) {
   } else {
     const rect = img.getBoundingClientRect();
     const bodyRect = document.body.getBoundingClientRect();
-    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    const scrollLeft =
+      window.pageXOffset || document.documentElement.scrollLeft;
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     $title.style.position = "absolute";
     $title.style.top = `${scrollTop +
